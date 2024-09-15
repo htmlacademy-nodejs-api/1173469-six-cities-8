@@ -7,6 +7,7 @@ export class HelpCommand implements Command {
   }
 
   public async execute(..._parameters: string[]): Promise<void> {
+    /* eslint-disable no-useless-escape */
     console.info(chalk.red(`
                             .-.
                            |_:_|
@@ -31,6 +32,7 @@ export class HelpCommand implements Command {
                /___.-/_|-'   \\  \\
                               '-'
     `));
+    /* eslint-enable no-useless-escape */
 
     console.info(chalk.green.bold(`
         Программа для подготовки данных для REST API сервера.
