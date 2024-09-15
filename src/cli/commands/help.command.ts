@@ -1,3 +1,4 @@
+import chalk from 'chalk';
 import { Command } from './command.interface.js';
 
 export class HelpCommand implements Command {
@@ -6,15 +7,46 @@ export class HelpCommand implements Command {
   }
 
   public async execute(..._parameters: string[]): Promise<void> {
-    console.info(`
+    console.info(chalk.red(`
+                            .-.
+                           |_:_|
+                          /(_Y_)\\
+     .                   ( \\/M\\/ )
+      '.               _.'-/'-\\'-._
+        ':           _/.--'[[[[]'--.\\_
+          ':        /_'  : |::"| :  '.\\
+            ':     //   ./ |oUU| \.'  :\\
+              ':  _:'..' \\_|___|_/ :   :|
+                ':.  .'  |_[___]_|  :.':\\
+                 [::\\ |  :  | |  :   ; : \\
+                  '-'   \\/'.| |.' \\  .;.' |
+                  |\\_    \\  '-'   :       |
+                  |  \\    \\ .:    :   |   |
+                  |   \\    | '.   :    \\  |
+                  /       \\   :. .;       |
+                 /     |   |  :__/     :  \\
+                |  |   |    \\:   | \\   |   ||
+               /    \\  : :  |:   /  |__|   /|
+               |     : : :_/_|  /'._\\  '--|_\\
+               /___.-/_|-'   \\  \\
+                              '-'
+    `));
+
+    console.info(chalk.green.bold(`
         Программа для подготовки данных для REST API сервера.
-        Пример:
-            cli.js --<command> [--arguments]
-        Команды:
-            --version:                   # выводит номер версии
-            --help:                      # печатает этот текст
-            --import <path>:             # импортирует данные из TSV
-            --generate <n> <path> <url>  # генерирует произвольное количество тестовых данных
+    `));
+
+    console.info(`${chalk.blue('Пример:')} ${chalk.yellow('cli.js')} ${chalk.magenta('--<command>')} ${chalk.cyan('[--arguments]')}`);
+
+    console.info(chalk.blue(`
+Команды:
+    `));
+
+    console.info(`
+${chalk.cyan('--version')}:                   ${chalk.magenta('# выводит номер версии')}
+${chalk.cyan('--help')}:                      ${chalk.magenta('# печатает этот текст')}
+${chalk.cyan('--import')} <${chalk.yellow('path')}>:             ${chalk.magenta('# импортирует данные из TSV')}
+${chalk.cyan('--generate')} <${chalk.yellow('n')}> <${chalk.yellow('path')}> <${chalk.yellow('url')}>  ${chalk.magenta('# генерирует произвольное количество тестовых данных')}
     `);
   }
 }
