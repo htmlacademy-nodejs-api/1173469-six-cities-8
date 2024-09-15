@@ -10,7 +10,7 @@ export class TSVFileReader implements FileReader {
   ) {}
 
   private validateRawData(): void {
-    if (! this.rawData) {
+    if (!this.rawData) {
       throw new Error('File was not read');
     }
   }
@@ -84,12 +84,12 @@ export class TSVFileReader implements FileReader {
       isFavorite: isFavorite === 'true',
       rating: Number(rating),
       type: offerType, // Приведение типа жилья
-      rooms: Number(rooms),
-      guests: Number(guests),
-      price: Number(price),
+      rooms: Number.parseInt(rooms, 10),
+      guests: Number.parseInt(guests, 10),
+      price: Number.parseInt(price, 10),
       amenities: validAmenities, // Проверенные удобства
       user: this.parseUser(username, email, avatarPath, userType as keyof typeof UserType),
-      commentCount: Number(commentCount),
+      commentCount: Number.parseInt(commentCount, 10),
       location: { latitude, longitude },
     };
   }
