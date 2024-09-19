@@ -111,7 +111,6 @@ export class TSVFileReader implements FileReader {
       name,
       email,
       avatarPath,
-      password: '', // Пароль не хранится в TSV
       type: validUserType, // Приведение типа пользователя
     };
   }

@@ -1,0 +1,141 @@
+{
+  "api": {
+    "cities": [
+      "Paris",
+      "Cologne",
+      "Brussels",
+      "Amsterdam",
+      "Hamburg",
+      "Dusseldorf"
+    ],
+    "coordinates": {
+      "Paris": { "latitude": 48.85661, "longitude": 2.351499 },
+      "Cologne": { "latitude": 50.938361, "longitude": 6.959974 },
+      "Brussels": { "latitude": 50.846557, "longitude": 4.351697 },
+      "Amsterdam": { "latitude": 52.370216, "longitude": 4.895168 },
+      "Hamburg": { "latitude": 53.550341, "longitude": 10.000654 },
+      "Dusseldorf": { "latitude": 51.225402, "longitude": 6.776314 }
+    },
+    "offerTypes": [
+      "apartment",
+      "house",
+      "room",
+      "hotel"
+    ],
+    "titles": [
+      "Luxury apartment in the city center",
+      "Cozy house with a beautiful garden",
+      "Modern studio near downtown",
+      "Spacious villa for family holidays",
+      "Stylish loft with city views",
+      "Comfortable apartment near park",
+      "Charming cottage in a quiet area",
+      "Penthouse with stunning views",
+      "Bright studio in the old town",
+      "Elegant house by the river"
+    ],
+    "descriptions": [
+      "A luxurious apartment with all modern amenities, located in the heart of the city.",
+      "A cozy and spacious house with a private garden, perfect for a relaxing stay.",
+      "A modern studio, close to the city's main attractions, ideal for short stays.",
+      "A large villa with multiple rooms and a private pool, great for family vacations.",
+      "A stylish loft apartment with panoramic city views and contemporary design.",
+      "A comfortable apartment near the park, with easy access to public transportation.",
+      "A charming cottage in a quiet neighborhood, offering peace and privacy.",
+      "A luxurious penthouse with stunning views of the city and top-tier amenities.",
+      "A bright and modern studio located in the old town, close to historical sites.",
+      "An elegant house by the river, offering a beautiful and tranquil environment."
+    ],
+    "previewImages": [
+      "luxury-apartment.jpg",
+      "cozy-house.jpg",
+      "modern-studio.jpg",
+      "spacious-villa.jpg",
+      "stylish-loft.jpg",
+      "comfortable-apartment.jpg",
+      "charming-cottage.jpg",
+      "penthouse.jpg",
+      "bright-studio.jpg",
+      "elegant-house.jpg"
+    ],
+    "images": [
+      "image1.jpg",
+      "image2.jpg",
+      "image3.jpg",
+      "image4.jpg",
+      "image5.jpg",
+      "image6.jpg"
+    ],
+    "amenities": [
+      "Breakfast",
+      "Air conditioning",
+      "Laptop friendly workspace",
+      "Baby seat",
+      "Washer",
+      "Towels",
+      "Fridge"
+    ],
+    "users": [
+      {
+        "name": "Alice Johnson",
+        "email": "alice.johnson@example.com",
+        "avatarPath": "alice.jpg",
+        "type": "pro"
+      },
+      {
+        "name": "Bob Smith",
+        "email": "bob.smith@example.com",
+        "avatarPath": "bob.jpg",
+        "type": "ordinary"
+      },
+      {
+        "name": "Charlie Davis",
+        "email": "charlie.davis@example.com",
+        "avatarPath": "charlie.jpg",
+        "type": "pro"
+      },
+      {
+        "name": "Diane Evans",
+        "email": "diane.evans@example.com",
+        "avatarPath": "diane.jpg",
+        "type": "pro"
+      },
+      {
+        "name": "Ethan Ford",
+        "email": "ethan.ford@example.com",
+        "avatarPath": "ethan.jpg",
+        "type": "ordinary"
+      },
+      {
+        "name": "Fiona Green",
+        "email": "fiona.green@example.com",
+        "avatarPath": "fiona.jpg",
+        "type": "pro"
+      },
+      {
+        "name": "George Taylor",
+        "email": "george.taylor@example.com",
+        "avatarPath": "george.jpg",
+        "type": "ordinary"
+      },
+      {
+        "name": "Hannah Moore",
+        "email": "hannah.moore@example.com",
+        "avatarPath": "hannah.jpg",
+        "type": "pro"
+      },
+      {
+        "name": "Ian Brown",
+        "email": "ian.brown@example.com",
+        "avatarPath": "ian.jpg",
+        "type": "ordinary"
+      },
+      {
+        "name": "Judy Black",
+        "email": "judy.black@example.com",
+        "avatarPath": "judy.jpg",
+        "type": "pro"
+      }
+    ]
+  }
+}
