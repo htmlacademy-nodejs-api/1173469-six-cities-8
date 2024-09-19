@@ -9,7 +9,7 @@ export type Offer = {
   images: string[]; // Список фотографий (6 изображений)
   isPremium: boolean;
   isFavorite: boolean;
-  rating: number; // 1 - 5
+  rating: number; // 1 - 5 Допускаются числа с запятой (1 знак после запятой)
   type: OfferType;
   rooms: number; // 1 - 8
   guests: number; // 1 - 10
